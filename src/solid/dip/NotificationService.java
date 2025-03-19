@@ -1,5 +1,11 @@
-package di;
+package solid.dip;
 
+/**
+ * Dependency Injection (DI) is a design pattern that allows objects to be injected into a class,
+ * rather than the class creating them itself.
+ * This promotes loose coupling, making the application more modular, testable, and maintainable.
+ * This will resolve the problem of dependency,and dynamically inject the dependency.
+ */
 public class NotificationService {
 
     private NotificationServiceProvider notificationServiceProvider;

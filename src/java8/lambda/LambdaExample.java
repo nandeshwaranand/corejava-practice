@@ -1,4 +1,4 @@
-package lambda;
+package java8.lambda;
 
 public class LambdaExample {
     public static void main(String[] args) {

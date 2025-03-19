@@ -1,4 +1,4 @@
-package di;
+package solid.dip;
 
 public class EmailNotificationProvider implements NotificationServiceProvider{
 

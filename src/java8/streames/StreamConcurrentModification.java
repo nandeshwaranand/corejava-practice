@@ -1,4 +1,4 @@
-package streames;
+package java8.streames;
 
 import java.util.Arrays;
 import java.util.List;

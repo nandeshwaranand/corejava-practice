@@ -1,4 +1,4 @@
-package di;
+package solid.dip;
 
 @FunctionalInterface
 public interface NotificationServiceProvider {

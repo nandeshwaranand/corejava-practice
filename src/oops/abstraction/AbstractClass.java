@@ -2,11 +2,13 @@ package oops.abstraction;
 
 public abstract class AbstractClass {
 
-    public AbstractClass(){
+    protected AbstractClass(){
         System.out.println("Abstract class instantiated");
     }
 
-    public AbstractClass(int param){
+
+
+    protected AbstractClass(int param){
         System.out.println("Abstract class parameter constructor called");
     }
 

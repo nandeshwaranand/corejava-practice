@@ -1,4 +1,4 @@
-package di;
+package solid.dip;
 
 public class SMSNotificationProvider implements NotificationServiceProvider{
 
