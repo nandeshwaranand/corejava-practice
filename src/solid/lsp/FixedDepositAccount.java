@@ -8,7 +8,7 @@ package solid.lsp;
 public class FixedDepositAccount extends BankService{
 
     @Override
-    double showBalance() {
+    public double showBalance() {
         System.out.println("Showing Fixed Deposit Account Balance...");
         return 0;
     }

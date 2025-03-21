@@ -1,6 +1,6 @@
 package solid.lsp;
 
-abstract class BankService {
+public abstract class BankService {
 
-    abstract double showBalance();
+    public abstract double showBalance();
 }

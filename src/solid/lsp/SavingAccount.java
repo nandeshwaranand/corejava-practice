@@ -12,7 +12,7 @@ public class SavingAccount extends WithdrawableService{
     }
 
     @Override
-    double showBalance() {
+    public double showBalance() {
         System.out.println("Showing Savings Account Balance...");
         return 0;
     }
