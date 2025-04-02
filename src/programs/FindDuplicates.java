@@ -1,9 +1,7 @@
 package programs;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class FindDuplicates {
 
@@ -20,6 +18,7 @@ public class FindDuplicates {
         System.out.println("Set Duplicate elements: " + duplicates);
         usingMap(names);
         withoutCollection(names);
+        usingStream();
     }
 
     static void usingMap(String[] names){
@@ -49,5 +48,12 @@ public class FindDuplicates {
                 }
             }
         }
+    }
+
+    static void usingStream(){
+        List<Integer> list = Arrays.asList(12, 34, 65, 34, 76, 12);
+        Set<Integer> uniqueElements = new HashSet<>();
+       // If add() returns false, it's a duplicate
+        list.stream().filter(number -> !uniqueElements.add(number)).forEach(System.out::println);
     }
 }

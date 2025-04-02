@@ -11,6 +11,7 @@ public class ThreadClass extends Thread{
     public void start() {
         try {
             Thread.sleep(10000);
+            System.out.println("Sleep");
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

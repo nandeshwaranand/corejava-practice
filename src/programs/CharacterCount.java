@@ -28,15 +28,15 @@ public class CharacterCount {
     static void withoutCollection(char[] charArray){
         StringBuilder checkedChars = new StringBuilder();
         for (char ch: charArray){
-            boolean isUsed = checkedChars.chars().anyMatch(c -> ch ==c);
+            boolean isUsed = checkedChars.chars().anyMatch(c -> ch ==c); // to avoid duplicate print
             if (!Character.isWhitespace(ch) && !isUsed) {
                 int count = 0;
-                checkedChars.append(ch);
                 for (int i = 0; i < charArray.length; i++) {
                     if (ch == charArray[i]) {
                         count++;
                     }
                 }
+                checkedChars.append(ch);
                 System.out.println("Char=" + ch + " Count:" + count);
             }
         }
